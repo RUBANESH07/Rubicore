@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme: warm off-white surfaces (#fbf9f7), dark pink as the main accent, and light blue / green / yellow / red as the chart colours. */
+:root {
+  --background: 30 24% 94%;           /* page behind the cards */
+  --card: 30 33% 97.5%;               /* #fbf9f7 */
+  --foreground: 335 20% 14%;
+  --border: 28 20% 86%;
+  --muted: 30 24% 92%;
+  --muted-foreground: 335 8% 40%;
+  --primary: 333 81% 40%;             /* dark pink #be185d */
+  --primary-foreground: 30 33% 97.5%;
+  --success: 152 55% 31%;
+  --danger: 2 68% 46%;
+  --warning: 36 90% 40%;
+  --sky: 200 70% 72%;                 /* light blue */
+  --mint: 146 45% 66%;                /* light green */
+  --sun: 45 88% 68%;                  /* light yellow */
+  --coral: 4 80% 75%;                 /* light red */
+}
+
+.dark {
+  --background: 335 14% 7%;
+  --card: 335 11% 10.5%;
+  --foreground: 30 25% 94%;
+  --border: 335 9% 19%;
+  --muted: 335 10% 15%;
+  --muted-foreground: 30 8% 64%;
+  --primary: 333 82% 62%;
+  --primary-foreground: 335 14% 7%;
+  --success: 150 50% 52%;
+  --danger: 2 80% 66%;
+  --warning: 40 90% 58%;
+  --sky: 200 62% 60%;
+  --mint: 146 40% 55%;
+  --sun: 45 80% 62%;
+  --coral: 4 70% 66%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+* {
+  @apply border-border;
+}
+
+@media print {
+  aside, header, .fixed { display: none !important; }
+}

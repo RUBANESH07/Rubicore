@@ -1,0 +1,20 @@
+{
+  "name": "RubiCore",
+  "short_name": "RubiCore",
+  "description": "Track Your Day. Understand Your Money. Explore the World.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1220",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Start a ride", "url": "/ride/start" },
+    { "name": "Save parking", "url": "/ride/parking" },
+    { "name": "Add fuel", "url": "/ride/fuel" }
+  ]
+}

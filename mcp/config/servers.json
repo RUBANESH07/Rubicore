@@ -1,0 +1,16 @@
+{
+  "servers": [
+    {"name": "stocks", "title": "Stock Market", "script": "servers/stocks/server.py",
+     "description": "NSE/BSE quotes, indices, company fundamentals and technicals (public data).",
+     "permissions": ["network:public", "data:market"], "default_enabled": true},
+    {"name": "news", "title": "News", "script": "servers/news/server.py",
+     "description": "Public headlines from RSS feeds and Google News.",
+     "permissions": ["network:public", "data:news"], "default_enabled": true},
+    {"name": "search", "title": "Search", "script": "servers/search/server.py",
+     "description": "Wikipedia search for general public knowledge.",
+     "permissions": ["network:public", "data:encyclopedia"], "default_enabled": true},
+    {"name": "public_data", "title": "Weather & Economy", "script": "servers/public_data/server.py",
+     "description": "Open-Meteo weather and World Bank economic indicators.",
+     "permissions": ["network:public", "data:weather", "data:economy"], "default_enabled": true}
+  ]
+}
